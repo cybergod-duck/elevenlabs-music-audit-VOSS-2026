@@ -6,7 +6,7 @@
 
 **Ref:** VNR-TR-2026-05 // Chat ID: 019cf8b3-dcc9-7fba0-aeec-a8be811bf196
 
-**Repository:** [elevenlabs-music-audit-VOSS-2026](https://github.com/cybergod-duck/elevenlabs-music-audit-VOSS-2026)
+**Website:** [vossneuralresearch.com](https://www.vossneuralresearch.com)
 
 ### **🔴 [VIEW STAGED DISCLOSURE REPORT (LIVE PREVIEW)](https://cybergod-duck.github.io/elevenlabs-music-audit-VOSS-2026/)**
 
