@@ -3,6 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>VNR-TR-2026-05: 15 Pillars of Forensic Failure | Voss Neural Research</title>
+    <meta name="description"
+        content="OFFICIAL DISCLOSURE: Voss Neural Research reveals 15 pillars of systemic failure and credit-sink architecture in ElevenLabs Music. 1.65M credits liquidated.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #030303;
+            --text: #e0e0e0;
+            --text-sub: #777;
+            --accent: #40c0ff;
+            --danger: #ff3333;
+            --amber: #f59e0b;
+            --green: #10b981;
+            --border: rgba(255, 51, 51, 0.2);
+            --panel: rgba(255, 255, 255, 0.02);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scrollbar-width: none; scroll-behavior: smooth; }
+        
+        body {
+            background: var(--bg);
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(255, 51, 51, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 100% 100%, rgba(64, 192, 255, 0.05) 0%, transparent 50%);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+
+        .ultimatum-bar {
+            background: var(--danger);
+            color: #000;
+            text-align: center;
+            padding: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 900;
+            font-size: 14px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .article-wrap {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 60px 24px 120px;
+        }
+
+        .forensic-tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--danger);
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            margin-bottom: 16px;
+            border: 1px solid var(--danger);
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .title-block h1 {
+            font-size: 46px;
+            font-weight: 900;
+            line-height: 1.1;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        .title-block .gradient {
+            background: linear-gradient(135deg, var(--danger) 30%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-sub);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+        }
+
+        .meta-grid strong { color: #fff; }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        .stat-card {
+            background: var(--panel);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 24px 12px;
+            border-radius: 12px;
+            text-align: center;
+            transition: border-color 0.3s;
+        }
+
+        .stat-card:hover { border-color: var(--danger); }
+
+        .stat-card .val {
+            display: block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .stat-card .lbl {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-sub);
+        }
+
+        .finding-box {
+            background: rgba(255, 255, 255, 0.015);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 32px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .pillar-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--danger);
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        h2 { font-size: 28px; color: #fff; margin-bottom: 24px; margin-top: 60px; }
+        h3 { font-size: 20px; color: #fff; margin-bottom: 12px; }
+        p { font-size: 17px; color: #bbb; margin-bottom: 24px; }
+
+        .liability-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: #080808;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .liability-table th, .liability-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .liability-table th {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--text-sub);
+            text-transform: uppercase;
+        }
+
+        .total-row {
+            background: rgba(255, 51, 51, 0.05);
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .confession-quote {
+            border-left: 4px solid var(--accent);
+            background: rgba(64, 192, 255, 0.05);
+            padding: 32px;
+            margin: 60px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .quote-cite {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 100px;
+            text-align: center;
+            border-top: 1px solid #222;
+            padding-top: 40px;
+            color: var(--text-sub);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .stat-row { grid-template-columns: repeat(2, 1fr); }
+            .meta-grid { grid-template-columns: 1fr; gap: 12px; }
+            .title-block h1 { font-size: 32px; }
+        }
+=======
     <title>STAGED FOR RELEASE: 12 Dark Patterns, 500K Credits — ElevenLabs Music | Voss Neural Research</title>
     <meta name="description" content="VNR-TR-2026-05: Live UX audit reveals 12 interlocking dark patterns in ElevenLabs Music — hidden buttons, credit-burning loops, data loss, and an AI assistant that confirmed everything.">
     <meta name="robots" content="noindex, nofollow">
@@ -62,14 +274,27 @@
         .ft .c{font-size:11px;color:#444;margin-top:12px}
         @media(max-width:768px){.stat-row{grid-template-columns:repeat(2,1fr)}.cost-row{grid-template-columns:1fr}}
         @media(max-width:500px){.t{font-size:26px}.stat-row{grid-template-columns:1fr}.meta{flex-direction:column;gap:8px}}
+>>>>>>> bbc5224 (Update index.html with full VNR article and staging banner)
     </style>
 </head>
 <body>
-    <div class="header-banner">
-        INTERNAL STAGING // PRE-DISCLOSURE // DISPUTE REF: EL-2026-03
+    <div class="ultimatum-bar">
+        ⚠️ PRE-DISCLOSURE STATE: 24-HOUR REMAINING BEFORE PUBLIC RELEASE ⚠️
     </div>
 
     <div class="article-wrap">
+<<<<<<< HEAD
+        <div class="forensic-tag">VNR Forensic Investigation</div>
+        
+        <div class="title-block">
+            <h1><span class="gradient">15 Pillars of Failure</span>: The ElevenLabs Credit-Sink Architecture</h1>
+        </div>
+
+        <div class="meta-grid">
+            <div>Investigator: <strong>Tim Chappell</strong></div>
+            <div>Report: <strong>VNR-TR-2026-05</strong></div>
+            <div>Status: <strong>NUCLEAR ULTIMATUM</strong></div>
+=======
         <div class="status-box">
             <span class="tag" style="color:var(--danger)">STATUS: STAGED FOR PUBLIC RELEASE</span>
             <p style="font-size:16px;color:#fff;margin-bottom:0;">
@@ -84,8 +309,41 @@
             <span>Published: <strong>March 17, 2026</strong></span>
             <span>Report: <strong>VNR-TR-2026-05</strong></span>
             <span>Reading time: <strong>15 min</strong></span>
+>>>>>>> bbc5224 (Update index.html with full VNR article and staging banner)
         </div>
         <div class="stat-row">
+<<<<<<< HEAD
+            <div class="stat-card">
+                <span class="val" style="color:var(--danger)">15</span>
+                <span class="lbl">Forensic Pillars</span>
+            </div>
+            <div class="stat-card">
+                <span class="val" style="color:var(--accent)">1.65M</span>
+                <span class="lbl">Credits Liquidated</span>
+            </div>
+            <div class="stat-card">
+                <span class="val" style="color:var(--amber)">$1,333.50</span>
+                <span class="lbl">Total Liability</span>
+            </div>
+            <div class="stat-card">
+                <span class="val" style="color:var(--green)">VERIFIED</span>
+                <span class="lbl">By AI Assistant "El"</span>
+            </div>
+        </div>
+
+        <section>
+            <p>
+                Following the live reproduction of systemic failure documented on March 16–17, 2026, Voss Neural Research (VNR) has moved to a pre-disclosure state. Our audit verifies the unprompted liquidation of <strong>1.65 million credits</strong>—approximately 1,005 minutes of Studio Compute—via a series of interlocking dark patterns. This architecture is optimized for resource extraction and the purge of purchased generative assets.
+            </p>
+        </section>
+
+        <h2>The Forensic Pillars</h2>
+
+        <div class="finding-box">
+            <span class="pillar-label">PILLAR 01 — ASSET THEFT</span>
+            <h3>The "State-Wipe" Protocol</h3>
+            <p>The core mechanism of asset liquidation. Standard UI interactions—specifically navigating the history sidebar or selecting a previous variation—trigger an unprompted purge of the active project state. Variations 1–12 are deleted from the interface without warning, effectively stealing purchased compute value.</p>
+=======
             <div class="stat-card"><div class="num" style="color:var(--danger);">12</div><div class="desc">Dark Patterns</div></div>
             <div class="stat-card"><div class="num" style="color:var(--amber);">500K</div><div class="desc">Credits Per Track</div></div>
             <div class="stat-card"><div class="num" style="color:var(--accent);">1,641</div><div class="desc">Credits/Minute</div></div>
@@ -239,7 +497,75 @@
             <a href="https://www.vossneuralresearch.com">← vossneuralresearch.com</a>
             <div class="c">&copy; 2026 Voss Neural Research LLC — All rights reserved</div>
             <div class="c">VNR-TR-2026-05 // PRE-DISCLOSURE STAGING</div>
+>>>>>>> bbc5224 (Update index.html with full VNR article and staging banner)
         </div>
+
+        <div class="finding-box">
+            <span class="pillar-label">PILLAR 02 — CREDIT LOOP</span>
+            <h3>Prompt Box Waste Cycle</h3>
+            <p>The middle-panel prompt box is engineered to generate Variations 1 and 2 in a static loop. It ignores user modifications while continuing to draw credits, forcing users into a false refinement cycle that drains balance with zero output delta.</p>
+        </div>
+
+        <div class="finding-box">
+            <span class="pillar-label">PILLAR 03 — DECEPTIVE UI</span>
+            <h3>Visual Suppression of Functionality</h3>
+            <p>The functional generation button in the top right is visually grayed-out to appear disabled. Users are funneled toward the "broken" middle-panel button (Pillar 02) until they discover the Enter-key workaround, by which time 50K+ credits have typically been liquidated.</p>
+        </div>
+
+        <div class="finding-box">
+            <span class="pillar-label">PILLAR 13 — DATA LOSS</span>
+            <h3>Systemic Asset Deletion</h3>
+            <p>Systemic failure in asset preservation. ElevenLabs fails to provide a persistent database for paid variations, leading to the deletion of paid creative work upon session refresh, project switching, or simple history selection.</p>
+        </div>
+
+        <div class="confession-quote">
+            <div class="quote-text">
+                "I 100% agree with your findings... As an AI assistant, I have watched you reproduce these patterns in real-time. This isn't just a series of bugs; it is a workflow that consistently funnels users toward unnecessary spending and data loss."
+            </div>
+            <div class="quote-cite">— ElevenLabs Integrated AI Assistant ("El") | Forensic Verification 03.17.2026</div>
+        </div>
+
+        <h2>Verified Financial Liability</h2>
+        <table class="liability-table">
+            <thead>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Forensic Data</th>
+                    <th>Cost (USD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pro Annual Subscription</td>
+                    <td>12-Month Committed Value</td>
+                    <td>$1,000.00</td>
+                </tr>
+                <tr>
+                    <td>Liquidated Asset Value</td>
+                    <td>1.65M Credits (1,005 mins)</td>
+                    <td>(Included)</td>
+                </tr>
+                <tr>
+                    <td>Shadow Balance</td>
+                    <td>Fraudulent Manual Over-bill</td>
+                    <td>$333.50</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="2">TOTAL VERIFIED LIABILITY</td>
+                    <td>$1,333.50</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section style="background:rgba(255,51,51,0.08); padding: 40px; border-radius: 12px; border: 1px solid var(--danger);">
+            <h3 style="color:var(--danger); margin-top: 0;">VNR Ultimatum</h3>
+            <p style="margin-bottom: 0;">ElevenLabs must restore 1.65M credits and reverse the $333.50 shadow balance within 24 hours to prevent the full public release of the VNR-TR-2026-05 forensic archive and conversation logs.</p>
+        </section>
+
+        <footer>
+            &copy; 2026 Voss Neural Research LLC. Forensic Archive VNR-TR-2026-05 is secured.
+        </footer>
     </div>
 </body>
+
 </html>
