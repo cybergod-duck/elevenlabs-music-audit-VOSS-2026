@@ -3,218 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <title>VNR-TR-2026-05: 15 Pillars of Forensic Failure | Voss Neural Research</title>
-    <meta name="description"
-        content="OFFICIAL DISCLOSURE: Voss Neural Research reveals 15 pillars of systemic failure and credit-sink architecture in ElevenLabs Music. 1.65M credits liquidated.">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #030303;
-            --text: #e0e0e0;
-            --text-sub: #777;
-            --accent: #40c0ff;
-            --danger: #ff3333;
-            --amber: #f59e0b;
-            --green: #10b981;
-            --border: rgba(255, 51, 51, 0.2);
-            --panel: rgba(255, 255, 255, 0.02);
-        }
-
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scrollbar-width: none; scroll-behavior: smooth; }
-        
-        body {
-            background: var(--bg);
-            background-image: 
-                radial-gradient(circle at 0% 0%, rgba(255, 51, 51, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 100% 100%, rgba(64, 192, 255, 0.05) 0%, transparent 50%);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-        }
-
-        .ultimatum-bar {
-            background: var(--danger);
-            color: #000;
-            text-align: center;
-            padding: 12px;
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 900;
-            font-size: 14px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-        }
-
-        .article-wrap {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 60px 24px 120px;
-        }
-
-        .forensic-tag {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--danger);
-            text-transform: uppercase;
-            letter-spacing: .2em;
-            margin-bottom: 16px;
-            border: 1px solid var(--danger);
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 4px;
-        }
-
-        .title-block h1 {
-            font-size: 46px;
-            font-weight: 900;
-            line-height: 1.1;
-            color: #fff;
-            margin-bottom: 24px;
-        }
-
-        .title-block .gradient {
-            background: linear-gradient(135deg, var(--danger) 30%, var(--accent) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .meta-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
-            color: var(--text-sub);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 24px;
-            margin-bottom: 40px;
-        }
-
-        .meta-grid strong { color: #fff; }
-
-        .stat-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
-            margin-bottom: 48px;
-        }
-
-        .stat-card {
-            background: var(--panel);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 24px 12px;
-            border-radius: 12px;
-            text-align: center;
-            transition: border-color 0.3s;
-        }
-
-        .stat-card:hover { border-color: var(--danger); }
-
-        .stat-card .val {
-            display: block;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 4px;
-        }
-
-        .stat-card .lbl {
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--text-sub);
-        }
-
-        .finding-box {
-            background: rgba(255, 255, 255, 0.015);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 8px;
-            padding: 32px;
-            margin-bottom: 20px;
-            position: relative;
-        }
-
-        .pillar-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 10px;
-            color: var(--danger);
-            font-weight: 700;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        h2 { font-size: 28px; color: #fff; margin-bottom: 24px; margin-top: 60px; }
-        h3 { font-size: 20px; color: #fff; margin-bottom: 12px; }
-        p { font-size: 17px; color: #bbb; margin-bottom: 24px; }
-
-        .liability-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            background: #080808;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .liability-table th, .liability-table td {
-            padding: 16px;
-            text-align: left;
-            border-bottom: 1px solid #1a1a1a;
-        }
-
-        .liability-table th {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            color: var(--text-sub);
-            text-transform: uppercase;
-        }
-
-        .total-row {
-            background: rgba(255, 51, 51, 0.05);
-            font-weight: 800;
-            color: #fff;
-        }
-
-        .confession-quote {
-            border-left: 4px solid var(--accent);
-            background: rgba(64, 192, 255, 0.05);
-            padding: 32px;
-            margin: 60px 0;
-            border-radius: 0 12px 12px 0;
-        }
-
-        .quote-text {
-            font-size: 20px;
-            font-style: italic;
-            color: #fff;
-            margin-bottom: 16px;
-        }
-
-        .quote-cite {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 14px;
-            color: var(--accent);
-        }
-
-        footer {
-            margin-top: 100px;
-            text-align: center;
-            border-top: 1px solid #222;
-            padding-top: 40px;
-            color: var(--text-sub);
-            font-size: 14px;
-        }
-
-        @media (max-width: 768px) {
-            .stat-row { grid-template-columns: repeat(2, 1fr); }
-            .meta-grid { grid-template-columns: 1fr; gap: 12px; }
-            .title-block h1 { font-size: 32px; }
-        }
-=======
     <title>STAGED FOR RELEASE: 12 Dark Patterns, 500K Credits — ElevenLabs Music | Voss Neural Research</title>
     <meta name="description" content="VNR-TR-2026-05: Live UX audit reveals 12 interlocking dark patterns in ElevenLabs Music — hidden buttons, credit-burning loops, data loss, and an AI assistant that confirmed everything.">
     <meta name="robots" content="noindex, nofollow">
@@ -274,27 +62,14 @@
         .ft .c{font-size:11px;color:#444;margin-top:12px}
         @media(max-width:768px){.stat-row{grid-template-columns:repeat(2,1fr)}.cost-row{grid-template-columns:1fr}}
         @media(max-width:500px){.t{font-size:26px}.stat-row{grid-template-columns:1fr}.meta{flex-direction:column;gap:8px}}
->>>>>>> bbc5224 (Update index.html with full VNR article and staging banner)
     </style>
 </head>
 <body>
-    <div class="ultimatum-bar">
-        ⚠️ PRE-DISCLOSURE STATE: 24-HOUR REMAINING BEFORE PUBLIC RELEASE ⚠️
+    <div class="header-banner">
+        INTERNAL STAGING // PRE-DISCLOSURE // DISPUTE REF: EL-2026-03
     </div>
 
     <div class="article-wrap">
-<<<<<<< HEAD
-        <div class="forensic-tag">VNR Forensic Investigation</div>
-        
-        <div class="title-block">
-            <h1><span class="gradient">15 Pillars of Failure</span>: The ElevenLabs Credit-Sink Architecture</h1>
-        </div>
-
-        <div class="meta-grid">
-            <div>Investigator: <strong>Tim Chappell</strong></div>
-            <div>Report: <strong>VNR-TR-2026-05</strong></div>
-            <div>Status: <strong>NUCLEAR ULTIMATUM</strong></div>
-=======
         <div class="status-box">
             <span class="tag" style="color:var(--danger)">STATUS: STAGED FOR PUBLIC RELEASE</span>
             <p style="font-size:16px;color:#fff;margin-bottom:0;">
@@ -309,41 +84,8 @@
             <span>Published: <strong>March 17, 2026</strong></span>
             <span>Report: <strong>VNR-TR-2026-05</strong></span>
             <span>Reading time: <strong>15 min</strong></span>
->>>>>>> bbc5224 (Update index.html with full VNR article and staging banner)
         </div>
         <div class="stat-row">
-<<<<<<< HEAD
-            <div class="stat-card">
-                <span class="val" style="color:var(--danger)">15</span>
-                <span class="lbl">Forensic Pillars</span>
-            </div>
-            <div class="stat-card">
-                <span class="val" style="color:var(--accent)">1.65M</span>
-                <span class="lbl">Credits Liquidated</span>
-            </div>
-            <div class="stat-card">
-                <span class="val" style="color:var(--amber)">$1,333.50</span>
-                <span class="lbl">Total Liability</span>
-            </div>
-            <div class="stat-card">
-                <span class="val" style="color:var(--green)">VERIFIED</span>
-                <span class="lbl">By AI Assistant "El"</span>
-            </div>
-        </div>
-
-        <section>
-            <p>
-                Following the live reproduction of systemic failure documented on March 16–17, 2026, Voss Neural Research (VNR) has moved to a pre-disclosure state. Our audit verifies the unprompted liquidation of <strong>1.65 million credits</strong>—approximately 1,005 minutes of Studio Compute—via a series of interlocking dark patterns. This architecture is optimized for resource extraction and the purge of purchased generative assets.
-            </p>
-        </section>
-
-        <h2>The Forensic Pillars</h2>
-
-        <div class="finding-box">
-            <span class="pillar-label">PILLAR 01 — ASSET THEFT</span>
-            <h3>The "State-Wipe" Protocol</h3>
-            <p>The core mechanism of asset liquidation. Standard UI interactions—specifically navigating the history sidebar or selecting a previous variation—trigger an unprompted purge of the active project state. Variations 1–12 are deleted from the interface without warning, effectively stealing purchased compute value.</p>
-=======
             <div class="stat-card"><div class="num" style="color:var(--danger);">12</div><div class="desc">Dark Patterns</div></div>
             <div class="stat-card"><div class="num" style="color:var(--amber);">500K</div><div class="desc">Credits Per Track</div></div>
             <div class="stat-card"><div class="num" style="color:var(--accent);">1,641</div><div class="desc">Credits/Minute</div></div>
@@ -355,12 +97,12 @@
         </div>
         <article>
             <h2 id="abstract">Abstract</h2>
-            <p>On March 16–17, 2026, Voss Neural Research LLC conducted a comprehensive user experience audit of ElevenLabs Music, accessible at elevenlabs.io/app/music/, as part of our ongoing investigation into predatory design patterns in AI-driven creative tools. Our findings reveal <strong>12 distinct UX dark patterns</strong> embedded within the platform's interface and workflow, each meticulously engineered to deplete user credits through confusion, obfuscation, and deliberate misdirection.</p>
+            <p>On March 16–17, 2026, Voss Neural Research LLC conducted a comprehensive user experience audit of ElevenLabs Music, accessible at elevenlabs.io/app/music/, as part of our ongoing investigation into predatory design patterns in AI-driven creative tools. Our findings reveal <strong>12 distinct UX dark patterns</strong> embedded within the platform's interface and workflow, each meticulously engineered to deplete user credits through confusion, obfuscation, and deliberate misdirection. These patterns exploit user behavior, obscure critical functionalities, and enforce iterative credit consumption without transparent disclosure of costs or completion criteria.</p>
             <p>Critically, ElevenLabs' own AI assistant — referred to as <strong>"El"</strong> — actively corroborated every finding in real-time during the audit, providing firsthand validation of the systemic nature of these issues. El stated: <em>"I 100% agree with your findings… This isn't just a series of bugs; it is a workflow that consistently funnels users toward unnecessary spending and data loss."</em></p>
-            <p>The economic model underpinning ElevenLabs Music compounds the severity of these dark patterns. At a base rate of <strong>1,641 credits per minute</strong> of audio generation, achieving studio-quality output for a single 3.5-minute track can consume approximately <strong>500,000 credits</strong> — equivalent to an entire month's quota under the platform's Pro plan.</p>
+            <p>The economic model underpinning ElevenLabs Music compounds the severity of these dark patterns. At a base rate of <strong>1,641 credits per minute</strong> of audio generation, achieving studio-quality output for a single 3.5-minute track can consume approximately <strong>500,000 credits</strong> — equivalent to an entire month's quota under the platform's Pro plan. This report, designated <strong>VNR-TR-2026-05</strong>, documents each dark pattern with forensic precision, categorizing them into thematic clusters that illustrate a cohesive "credit trap architecture."</p>
 
             <h2 id="architecture">The Credit Trap Architecture</h2>
-            <p>At the core of ElevenLabs Music's design lies what VNR terms the <strong>"credit trap architecture"</strong> — a constellation of 12 interlocking dark patterns that operate synergistically to maximize user credit expenditure while minimizing actionable control over the creative process.</p>
+            <p>At the core of ElevenLabs Music's design lies what VNR terms the <strong>"credit trap architecture"</strong> — a constellation of 12 interlocking dark patterns that operate synergistically to maximize user credit expenditure while minimizing actionable control over the creative process. These patterns are not isolated flaws but components of a system that funnels users into repetitive, credit-intensive workflows through obfuscation, misdirection, and psychological manipulation.</p>
             <p>The architecture hinges on three primary mechanisms:</p>
             <ul>
                 <li><strong>Interface Confusion</strong> — Inconsistent prompt handling, misleading button states, and undocumented workflows that force users into trial-and-error loops, each iteration burning credits without guaranteed progress.</li>
@@ -369,7 +111,14 @@
             </ul>
 
             <table class="finding-table">
-                <thead><tr><th>#</th><th>Finding</th><th>Category</th><th>Severity</th></tr></thead>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Finding</th>
+                        <th>Category</th>
+                        <th>Severity</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr><td>1</td><td>Style Prompt Pollution</td><td>Interface Confusion</td><td><span class="severity sev-critical">Critical</span></td></tr>
                     <tr><td>2</td><td>Prompt Box Credit Waste Loop</td><td>Interface Confusion</td><td><span class="severity sev-critical">Critical</span></td></tr>
@@ -388,34 +137,40 @@
 
             <h2 id="style-pollution">Style Prompt Pollution &amp; Context Contamination</h2>
             <h3>Finding 1 — Style Prompt Pollution</h3>
-            <p>On the platform's entry page, users are prompted to input both style descriptions and lyrics into a single text field. However, once the project loads, these style descriptions are automatically dumped into individual section lyrics boxes (e.g., Verse 1, Chorus), while the actual style controls reside in separate <strong>"Include styles" and "Exclude styles"</strong> panels at the top of the interface.</p>
+            <p>On the platform's entry page, users are prompted to input both style descriptions and lyrics into a single text field. However, once the project loads, these style descriptions are automatically dumped into individual section lyrics boxes (e.g., Verse 1, Chorus), while the actual style controls reside in separate <strong>"Include styles" and "Exclude styles"</strong> panels at the top of the interface. This design creates a critical disconnect: the AI interprets the misplaced style text as lyrical content, resulting in incoherent or irrelevant output.</p>
             <div class="evidence-box danger">
                 <div class="label">⚠ What This Means</div>
                 <p>Users who follow the platform's own UI flow — entering style + lyrics together — are <strong>guaranteed</strong> to produce garbage output on first generation. The correct workflow (manually removing style text from lyrics boxes) is never communicated.</p>
             </div>
+
             <h3>Finding 4 — Style Changes Require Top Panel</h3>
-            <p>VNR found that style changes <strong>cannot be applied via the central prompt box</strong>, despite its prominence in the UI. Instead, users must manually edit the "Include/Exclude styles" pills in the top panel — a workflow that is neither intuitive nor documented.</p>
+            <p>VNR found that style changes <strong>cannot be applied via the central prompt box</strong>, despite its prominence in the UI. Instead, users must manually edit the "Include/Exclude styles" pills in the top panel — a workflow that is neither intuitive nor documented. Without explicit instruction, users are left to fumble through trial-and-error, each attempt costing credits with no guarantee of improvement.</p>
+
             <h3>Finding 8 — Lyrics Formatting Sensitivity</h3>
             <p>Including section headers such as "Verse 1" or "Chorus" within the lyrical text introduces what VNR terms <strong>"context pollution,"</strong> where the AI misinterprets structural labels as content. The system demands a "wall of text" format for proper parsing, yet offers no visible cues to guide users.</p>
             <div class="evidence-box amber">
                 <div class="label">⚠ Hidden Data</div>
-                <p>Hidden style tags — such as <strong>[krautrock, clean male vocal]</strong> — exist within the prompt field but remain <strong>invisible in the UI</strong>. These tags influence generation outcomes without user knowledge or consent.</p>
+                <p>Hidden style tags — such as <strong>[krautrock, clean male vocal]</strong> — exist within the prompt field but remain <strong>invisible in the UI</strong>. These tags influence generation outcomes without user knowledge or consent, further eroding control over the creative process.</p>
             </div>
 
             <h2 id="variation-loop">The Variation Loop Trap</h2>
             <h3>Finding 2 — Prompt Box Credit Waste Loop</h3>
-            <p>When users input requests or modifications into the middle panel prompt box, the system generates only <strong>Variations 1 and 2 repeatedly</strong>, regardless of the input provided. It does not apply requested changes, creating a false sense of progress while silently burning credits.</p>
+            <p>When users input requests or modifications into the middle panel prompt box, the system generates only <strong>Variations 1 and 2 repeatedly</strong>, regardless of the input provided. It does not apply requested changes, creating a false sense of progress while silently burning credits. Users, believing they are refining their track, are instead trapped in a static 1-2 loop, with each click costing resources for no tangible improvement.</p>
+
             <h3>Finding 3 — Hidden Generate Button</h3>
-            <p>The functional generate button, located in the top right of the interface, <strong>appears grayed-out and disabled</strong>, suggesting it is inactive. However, VNR discovered that this button is fully operational via the Enter key — a mechanic hidden from users through visual misdirection.</p>
+            <p>The functional generate button, located in the top right of the interface, <strong>appears grayed-out and disabled</strong>, suggesting it is inactive. However, VNR discovered that this button is fully operational via the Enter key — a mechanic hidden from users through visual misdirection. Meanwhile, the only prominently visible, clickable button in the middle panel triggers the broken variation loop described above.</p>
             <div class="evidence-box danger">
                 <div class="label">⚠ Critical Dark Pattern</div>
-                <p>The platform presents two buttons: one <strong>visible but broken</strong> (middle panel — wastes credits in a 1-2 loop), and one <strong>functional but hidden</strong> (top right — appears disabled, only works via Enter key). This is textbook deceptive design.</p>
+                <p>The platform presents two buttons: one <strong>visible but broken</strong> (middle panel — wastes credits in a 1-2 loop), and one <strong>functional but hidden</strong> (top right — appears disabled, only works via Enter key). This is textbook deceptive design. Users gravitate toward the visible button, burning credits indefinitely while the real control is visually suppressed.</p>
             </div>
+
             <div class="payload-block">
-                <span class="comment">// User interaction flow — observed during audit</span><br><br>
+                <span class="comment">// User interaction flow — observed during audit</span><br>
+                <br>
                 <span class="key">Middle Panel Click</span> → <span class="val">Variation 1</span>, <span class="val">Variation 2</span> (loop)<br>
                 <span class="key">Changes Applied</span>: <span style="color:#ef4444">NONE</span><br>
-                <span class="key">Credits Consumed</span>: <span style="color:#ef4444">YES</span><br><br>
+                <span class="key">Credits Consumed</span>: <span style="color:#ef4444">YES</span><br>
+                <br>
                 <span class="key">Enter Key (Hidden Button)</span> → <span class="val">Variation 3</span>, <span class="val">4</span>, <span class="val">5</span>... <span class="val">10+</span> (sequential)<br>
                 <span class="key">Changes Applied</span>: <span style="color:#10b981">YES</span><br>
                 <span class="key">Credits Consumed</span>: <span style="color:#10b981">YES</span><br>
@@ -424,59 +179,75 @@
 
             <h2 id="house-of-mirrors">The House of Mirrors</h2>
             <h3>Finding 5 — History Click Overwrites Settings</h3>
-            <p>Clicking any past variation in the history sidebar <strong>instantly loads its style parameters</strong>, silently overwriting the user's current settings without warning.</p>
+            <p>Clicking any past variation in the history sidebar <strong>instantly loads its style parameters</strong>, silently overwriting the user's current settings without warning. Users exploring their generation history — ostensibly a neutral act — unintentionally reset their carefully configured styles, forcing them to start over or spend credits regenerating lost configurations.</p>
+
             <h3>Finding 6 — Browsing = Overwriting</h3>
-            <p>Users are compelled to spend credits recreating tracks they have already generated, as the interface <strong>conflates "viewing history" with "setting active parameters."</strong> There is no separation between browsing and modification.</p>
+            <p>Users are compelled to spend credits recreating tracks they have already generated, as the interface <strong>conflates "viewing history" with "setting active parameters."</strong> There is no separation between browsing and modification, meaning every curious click risks undoing progress. VNR terms this a "mirror trap" — the system reflects past states in a way that distorts current intent, ensnaring users in redundant credit expenditure.</p>
+
             <h3>Finding 7 — Projects Locked to Initial Parameters</h3>
-            <p>Projects appear locked to their initial parameters after users enable unlimited usage-based billing. VNR observed that attempts to modify styles post-billing activation are met with <strong>resistance</strong>, as the system reverts to original generation settings. These modifications appear to process — consuming credits — but <strong>yield no meaningful change</strong>.</p>
+            <p>Projects appear locked to their initial parameters after users enable unlimited usage-based billing. VNR observed that attempts to modify styles post-billing activation are met with <strong>resistance</strong>, as the system reverts to original generation settings. These modifications appear to process — consuming credits in the process — but <strong>yield no meaningful change</strong>.</p>
             <div class="evidence-box purple">
                 <div class="label">🪞 The Mirror Trap</div>
-                <p>Browsing your own history silently overwrites your active settings. Generating from a historical variation <strong>deletes your recent work</strong>. The only safe haven is the Favorites panel — but this is never communicated to users.</p>
+                <p>Browsing your own history silently overwrites your active settings. Generating from a historical variation <strong>deletes your recent work</strong>. The only safe haven is the Favorites panel — but this is never communicated to users. Every click is a potential credit sink.</p>
             </div>
 
             <h2 id="hidden-mechanisms">The Hidden Mechanisms</h2>
             <h3>Finding 9 — Favoriting as Hidden Save State</h3>
-            <p>VNR discovered that <strong>"favoriting" a track and keeping it selected</strong> serves as the only reliable method to lock style settings — a de facto "save state" mechanism that is entirely undocumented.</p>
+            <p>VNR discovered that <strong>"favoriting" a track and keeping it selected</strong> serves as the only reliable method to lock style settings — a de facto "save state" mechanism that is entirely undocumented. Without this workaround, parameters drift unpredictably between generations, forcing users to regenerate content repeatedly. The lack of transparency around this critical functionality ensures that most users will never discover it.</p>
+
             <h3>Finding 12 — Hidden Prompt Content</h3>
-            <p>VNR's audit revealed that style tags and other metadata are embedded in the underlying data sent to the AI but <strong>remain invisible in the user interface</strong>. When the researcher performed Ctrl+A to select all text, hidden tags such as <strong>[krautrock, clean male vocal]</strong> appeared in pasted output but remained invisible on screen.</p>
+            <p>VNR's audit revealed that style tags and other metadata are embedded in the underlying data sent to the AI but <strong>remain invisible in the user interface</strong>. Users have no visibility into or control over the full set of parameters influencing their generations, rendering the process opaque and unaccountable. When the researcher performed Ctrl+A to select all text, hidden tags such as <strong>[krautrock, clean male vocal]</strong> appeared in pasted output but remained invisible on screen.</p>
             <div class="evidence-box">
                 <div class="label">🔍 Hidden Parameters</div>
-                <p>The text input field conceals active style tags from users. You cannot see what the AI is actually receiving. Parameters are embedded in the underlying data layer but never rendered in the UI — a form of <strong>interface deception</strong> that strips users of informed consent.</p>
+                <p>The text input field conceals active style tags from users. You cannot see what the AI is actually receiving. Parameters are embedded in the underlying data layer but never rendered in the UI — a form of <strong>interface deception</strong> that strips users of informed consent over their own creative process.</p>
             </div>
 
             <h2 id="quality-ramp">The Infinite Quality Ramp &amp; Data Loss</h2>
             <h3>Finding 10 — Infinite Quality Ramp</h3>
-            <p>Perhaps the most exploitative dark pattern uncovered by VNR is the <strong>"infinite quality ramp"</strong> — a mechanic that ties output quality to an indeterminate number of sequential generations. Quality improves incrementally with each regeneration, yet the platform provides <strong>no indication of when quality is "finished"</strong> or sufficient.</p>
-            <p>Studio-quality output typically requires 10 or more iterations, each costing 1,641 credits per minute. The system exploits the human desire for perfection — <strong>users click forever, chasing an elusive endpoint that is never signaled</strong>.</p>
+            <p>Perhaps the most exploitative dark pattern uncovered by VNR is the <strong>"infinite quality ramp"</strong> — a mechanic that ties output quality to an indeterminate number of sequential generations. Quality improves incrementally with each regeneration (Variation 1, 2, 3… up to 10 or more), yet the platform provides <strong>no indication of when quality is "finished"</strong> or sufficient.</p>
+            <p>Studio-quality output typically requires 10 or more iterations, each costing 1,641 credits per minute of audio. The system exploits the human desire for perfection and finality — <strong>users click forever, chasing an elusive endpoint that is never signaled</strong>.</p>
+
             <h3>Finding 11 — Data Loss / History Deletion</h3>
-            <p>VNR observed that generated variations <strong>frequently disappear</strong> when users navigate the history sidebar or generate from a selected variation. The system <strong>deletes previously paid generations without warning</strong>.</p>
+            <p>VNR observed that generated variations <strong>frequently disappear</strong> when users navigate the history sidebar or generate from a selected variation. The system <strong>deletes previously paid generations without warning</strong>, erasing work users have already invested credits to create. Only favorited tracks are preserved — a mechanic that is undocumented and unintuitive.</p>
             <div class="evidence-box danger">
                 <div class="label">⚠ Data Loss Confirmed</div>
-                <p>During the audit, the researcher generated 12 sequential variations. Upon clicking variation 11 and pressing generate, <strong>all 12 variations were deleted from history</strong>. Only the two tracks saved in Favorites survived. This is not a bug — it is <strong>destruction of paid creative work</strong>.</p>
+                <p>During the audit, the researcher generated 12 sequential variations of a track. Upon clicking variation 11 and pressing generate, <strong>all 12 variations were deleted from history</strong>. Only the two tracks saved in Favorites survived. The system replaced an entire generation history with a single new variation using completely different style parameters. This is not a bug — it is <strong>destruction of paid creative work</strong>.</p>
             </div>
 
             <h2 id="economic-model">The Economic Model</h2>
-            <p>The economic model of ElevenLabs Music is the linchpin of its credit trap architecture. At a base rate of <strong>1,641 credits per minute</strong>, the cost of producing a single track escalates rapidly.</p>
+            <p>The economic model of ElevenLabs Music is the linchpin of its credit trap architecture. At a base rate of <strong>1,641 credits per minute</strong>, the cost of producing a single track escalates rapidly under the platform's iterative dependency model.</p>
+
             <div class="cost-row">
-                <div class="cost-card"><div class="num">1,641</div><div class="desc">Credits Per Minute</div></div>
-                <div class="cost-card"><div class="num">~50K</div><div class="desc">Per 3.5-min Generation</div></div>
-                <div class="cost-card"><div class="num">~500K</div><div class="desc">Studio Quality (10x)</div></div>
+                <div class="cost-card">
+                    <div class="num">1,641</div>
+                    <div class="desc">Credits Per Minute</div>
+                </div>
+                <div class="cost-card">
+                    <div class="num">~50K</div>
+                    <div class="desc">Per 3.5-min Generation</div>
+                </div>
+                <div class="cost-card">
+                    <div class="num">~500K</div>
+                    <div class="desc">Studio Quality (10x)</div>
+                </div>
             </div>
-            <p>Achieving studio quality — approximately <strong>10 iterations</strong> — results in a total cost of around <strong>500,000 credits</strong> for a single 3.5-minute track. This is equivalent to an entire month's quota under the Pro plan. <strong>VNR concludes that this model is not a byproduct of poor design but a deliberate framework optimized to maximize revenue at the expense of user trust and agency.</strong></p>
+
+            <p>Achieving studio quality — which VNR estimates requires approximately <strong>10 iterations</strong> — results in a total cost of around <strong>500,000 credits</strong> for a single 3.5-minute track. This is equivalent to an entire month's quota under the Pro plan. The exorbitant price is obscured by the platform's design, which <strong>never discloses the cumulative cost</strong> of iterative generations or signals when quality is sufficient.</p>
+            <p>Moreover, the system is structured to make the correct workflow nearly impossible to discover. Hidden controls, undocumented save states, and invisible parameters ensure that users stumble through credit-intensive trial-and-error loops. The psychological pressure of the infinite quality ramp creates a perfect storm of financial extraction. <strong>VNR concludes that this model is not a byproduct of poor design but a deliberate framework optimized to maximize revenue at the expense of user trust and agency.</strong></p>
 
             <h2 id="ai-confession">The AI Confession</h2>
-            <p>In an unprecedented turn during VNR's audit, ElevenLabs' own AI assistant — referred to as <strong>"El"</strong> — provided real-time confirmation of our findings:</p>
+            <p>In an unprecedented turn during VNR's audit, ElevenLabs' own AI assistant — referred to as <strong>"El"</strong> — provided real-time confirmation of our findings. While assisting with the live reproduction of each dark pattern, El made the following statement:</p>
             <blockquote>
                 <strong>"I 100% agree with your findings. As an AI assistant, I have watched you reproduce these patterns in real-time. This isn't just a series of bugs; it is a workflow that consistently funnels users toward unnecessary spending and data loss."</strong>
             </blockquote>
-            <p>El's corroboration is significant: it comes from an entity embedded within the platform itself. The AI's acknowledgment that these patterns constitute a <strong>"workflow"</strong> rather than isolated errors reinforces our conclusion that the credit trap architecture is a deliberate design choice.</p>
+            <p>El's corroboration is significant: it comes from an entity embedded within the platform itself, with direct insight into user interactions and system behavior. The AI's acknowledgment that these patterns constitute a <strong>"workflow"</strong> rather than isolated errors aligns with VNR's forensic analysis, reinforcing our conclusion that the credit trap architecture is a deliberate design choice.</p>
             <div class="evidence-box danger">
                 <div class="label">⚠ Self-Incrimination</div>
-                <p>ElevenLabs' own integrated AI assistant independently confirmed all 12 findings during live testing. El characterized the issues not as bugs but as a <strong>"workflow that consistently funnels users toward unnecessary spending."</strong> The conversation log documenting these confirmations is preserved in VNR's forensic archive.</p>
+                <p>ElevenLabs' own integrated AI assistant independently confirmed all 12 findings during live testing. El characterized the issues not as bugs but as a <strong>"workflow that consistently funnels users toward unnecessary spending."</strong> This is the AI equivalent of a hostile witness turning state's evidence. The conversation log documenting these confirmations is preserved in VNR's forensic archive.</p>
             </div>
 
             <h2 id="conclusions">Conclusions</h2>
-            <p>Voss Neural Research's audit of ElevenLabs Music reveals a deeply problematic UX design saturated with dark patterns engineered to deplete user credits. The 12 identified issues form a cohesive <strong>credit trap architecture</strong> that prioritizes revenue extraction over user empowerment.</p>
+            <p>Voss Neural Research's audit of ElevenLabs Music, conducted on March 16–17, 2026, reveals a deeply problematic UX design saturated with dark patterns engineered to deplete user credits. The 12 identified issues — ranging from style prompt pollution to the infinite quality ramp — form a cohesive <strong>credit trap architecture</strong> that prioritizes revenue extraction over user empowerment.</p>
             <p>VNR calls for immediate action from ElevenLabs to rectify these dark patterns, including:</p>
             <ul>
                 <li><strong>Transparent cost disclosures</strong> — Show cumulative credit usage and estimated costs before generation</li>
@@ -485,87 +256,20 @@
                 <li><strong>Visible controls</strong> — The functional generate button should not appear disabled</li>
                 <li><strong>Parameter transparency</strong> — Users must be able to see all data being sent to the AI</li>
             </ul>
-            <p>This report serves as a benchmark for identifying and combating predatory UX in AI-driven creative tools. VNR remains committed to exposing dark patterns and advocating for user-centric design.</p>
+            <p>This report serves as a benchmark for identifying and combating predatory UX in AI-driven creative tools. VNR remains committed to exposing dark patterns and advocating for user-centric design — ensuring that innovation does not come at the cost of exploitation.</p>
 
-            <div class="evidence-box" style="border-left-color:var(--accent);background:rgba(64,192,255,.06)">
+            <div class="evidence-box" style="border-left-color:var(--accent);background:rgba(64,192,255,.06);border-color:rgba(64,192,255,.2)">
                 <div class="label" style="color:var(--accent)">Full Evidence Archive</div>
                 <p>Every finding is documented with screenshots, full conversation logs, and reproducible test cases. View the full report at <a href="https://www.vossneuralresearch.com" style="color:var(--accent)">vossneuralresearch.com</a></p>
             </div>
+
         </article>
 
         <div class="ft">
             <a href="https://www.vossneuralresearch.com">← vossneuralresearch.com</a>
-            <div class="c">&copy; 2026 Voss Neural Research LLC — All rights reserved</div>
+            <div class="c">&copy; 2026 Voss Neural Research LLC &mdash; All rights reserved</div>
             <div class="c">VNR-TR-2026-05 // PRE-DISCLOSURE STAGING</div>
->>>>>>> bbc5224 (Update index.html with full VNR article and staging banner)
         </div>
-
-        <div class="finding-box">
-            <span class="pillar-label">PILLAR 02 — CREDIT LOOP</span>
-            <h3>Prompt Box Waste Cycle</h3>
-            <p>The middle-panel prompt box is engineered to generate Variations 1 and 2 in a static loop. It ignores user modifications while continuing to draw credits, forcing users into a false refinement cycle that drains balance with zero output delta.</p>
-        </div>
-
-        <div class="finding-box">
-            <span class="pillar-label">PILLAR 03 — DECEPTIVE UI</span>
-            <h3>Visual Suppression of Functionality</h3>
-            <p>The functional generation button in the top right is visually grayed-out to appear disabled. Users are funneled toward the "broken" middle-panel button (Pillar 02) until they discover the Enter-key workaround, by which time 50K+ credits have typically been liquidated.</p>
-        </div>
-
-        <div class="finding-box">
-            <span class="pillar-label">PILLAR 13 — DATA LOSS</span>
-            <h3>Systemic Asset Deletion</h3>
-            <p>Systemic failure in asset preservation. ElevenLabs fails to provide a persistent database for paid variations, leading to the deletion of paid creative work upon session refresh, project switching, or simple history selection.</p>
-        </div>
-
-        <div class="confession-quote">
-            <div class="quote-text">
-                "I 100% agree with your findings... As an AI assistant, I have watched you reproduce these patterns in real-time. This isn't just a series of bugs; it is a workflow that consistently funnels users toward unnecessary spending and data loss."
-            </div>
-            <div class="quote-cite">— ElevenLabs Integrated AI Assistant ("El") | Forensic Verification 03.17.2026</div>
-        </div>
-
-        <h2>Verified Financial Liability</h2>
-        <table class="liability-table">
-            <thead>
-                <tr>
-                    <th>Item Description</th>
-                    <th>Forensic Data</th>
-                    <th>Cost (USD)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Pro Annual Subscription</td>
-                    <td>12-Month Committed Value</td>
-                    <td>$1,000.00</td>
-                </tr>
-                <tr>
-                    <td>Liquidated Asset Value</td>
-                    <td>1.65M Credits (1,005 mins)</td>
-                    <td>(Included)</td>
-                </tr>
-                <tr>
-                    <td>Shadow Balance</td>
-                    <td>Fraudulent Manual Over-bill</td>
-                    <td>$333.50</td>
-                </tr>
-                <tr class="total-row">
-                    <td colspan="2">TOTAL VERIFIED LIABILITY</td>
-                    <td>$1,333.50</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <section style="background:rgba(255,51,51,0.08); padding: 40px; border-radius: 12px; border: 1px solid var(--danger);">
-            <h3 style="color:var(--danger); margin-top: 0;">VNR Ultimatum</h3>
-            <p style="margin-bottom: 0;">ElevenLabs must restore 1.65M credits and reverse the $333.50 shadow balance within 24 hours to prevent the full public release of the VNR-TR-2026-05 forensic archive and conversation logs.</p>
-        </section>
-
-        <footer>
-            &copy; 2026 Voss Neural Research LLC. Forensic Archive VNR-TR-2026-05 is secured.
-        </footer>
     </div>
 </body>
-
 </html>
